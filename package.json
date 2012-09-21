@@ -1,0 +1,22 @@
+{
+  "name": "fh-localdev-cloud",
+  "version": "0.0.1",
+  "author": "Gareth Murphy <gareth.murphy@feedhenry.com>",
+  "description": "'Shivs' for the cloud-side aspect of FeedHenry local development; intended to be merged with fhc-local eventually.",
+  "scripts": {
+    "test": "mocha"
+  },
+  "main": "./fh-cloud.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garmur/fh-localdev-cloud.git"
+  },
+  "keywords": [
+    "feedhenry",
+    "fh"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "1.4.x"
+  }
+}
