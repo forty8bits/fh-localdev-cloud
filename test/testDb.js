@@ -160,6 +160,21 @@ describe('$fh.db', function() {
         done();
       });
     });
+
+    it('should accept the eq option and filter results accordingly', function(done) {
+      $fh.db({
+        act: 'list',
+        type: type,
+        eq: {
+          firstName: 'Bob'
+        }
+      }, function(err, res) {
+        should.not.exist(err);
+        res.count.should.equal(1);
+        res.list[0].fields.firstName.should.equal('Bob');
+        done();
+      });
+    });
   });
 
   /*----------------------------------------------------------------------------

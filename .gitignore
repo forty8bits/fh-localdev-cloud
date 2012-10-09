@@ -15,3 +15,4 @@ node_modules
 npm-debug.log
 
 .idea
+.fhc_local
